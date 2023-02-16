@@ -153,6 +153,16 @@
 infospotlaurierpano21.addEventListener('click', function(){
 ChangePanorama('laurierpano3');
 });
+var infospotlaurierpano22 = new PANOLENS.Infospot( 512, hotspotIcons[11].data, true );
+					infospotlaurierpano22.position.set( 3496.83, 154.62, -3555.97 );
+					laurierpano2.add(infospotlaurierpano22);
+infospotlaurierpano22.addEventListener('click', function(){
+<!-- Import the component -->
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.0/model-viewer.min.js"></script>
+
+<!-- Use it like any other HTML element -->
+<model-viewer alt="Neil Armstrong's Spacesuit from the Smithsonian Digitization Programs Office and National Air and Space Museum" src="shared-assets/models/NeilArmstrong.glb" ar environment-image="shared-assets/environments/moon_1k.hdr" poster="shared-assets/models/NeilArmstrong.webp" shadow-intensity="1" camera-controls touch-action="pan-y" generate-schema></model-viewer>
+});
 viewer.add( laurierpano2 );
 var laurierpano3 = new PANOLENS.ImagePanorama( "panoramas/laurierpano3.jpg" );
 			laurierpano3.addEventListener('progress', function(e){
@@ -309,7 +319,7 @@
 ChangePanorama('laurierpano8');
 });
 viewer.add( laurierpano10 );
-$(document).ready(function(){ ChangePanorama('laurierpano1'); });
+$(document).ready(function(){ ChangePanorama('laurierpano2'); });
 
 /*panoramas-end*/
             
