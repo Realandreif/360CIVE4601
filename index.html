@@ -153,6 +153,12 @@
 infospotlaurierpano21.addEventListener('click', function(){
 ChangePanorama('laurierpano3');
 });
+var infospotlaurierpano22 = new PANOLENS.Infospot( 512, hotspotIcons[11].data, true );
+					infospotlaurierpano22.position.set( 3496.83, 154.62, -3555.97 );
+					laurierpano2.add(infospotlaurierpano22);
+infospotlaurierpano22.addEventListener('click', function(){
+window.open( 'https://realandreif.github.io/360CIVE4601/model.html', '_blank');
+});
 viewer.add( laurierpano2 );
 var laurierpano3 = new PANOLENS.ImagePanorama( "panoramas/laurierpano3.jpg" );
 			laurierpano3.addEventListener('progress', function(e){
@@ -309,7 +315,7 @@
 ChangePanorama('laurierpano8');
 });
 viewer.add( laurierpano10 );
-$(document).ready(function(){ ChangePanorama('laurierpano1'); });
+$(document).ready(function(){ ChangePanorama('laurierpano2'); });
 
 /*panoramas-end*/
             
